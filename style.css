@@ -76,6 +76,13 @@ main{
     color: #000000;
     animation: spin_4991 10s infinite;
   }
+
+  @media (min-width: 700px) {
+    .loader {
+      font-weight: 500;
+      font-size: 50px;
+  }}
+
   
   @keyframes spin_4991 {
     0% {
@@ -104,3 +111,4 @@ main{
     }  
   }
   
+
