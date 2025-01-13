@@ -40,6 +40,11 @@ main {
 
 .social img{
   width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.social img:hover{
+  transform: scale(1.2);
 }
 
 
@@ -52,7 +57,7 @@ main {
   margin-bottom: 50px;
 }
 
-button {
+.button {
   margin-top: 50px;
   padding: 0.8em 1.8em;
   border: 2px solid #000000;
@@ -66,9 +71,10 @@ button {
   z-index: 1;
   font-family: inherit;
   color: #000000;
+  text-decoration: none;
 }
 
-button::before {
+.button::before {
   content: '';
   width: 0;
   height: 300%;
@@ -82,11 +88,11 @@ button::before {
   z-index: -1;
 }
 
-button:hover::before {
+.button:hover::before {
   width: 105%;
 }
 
-button:hover {
+.button:hover {
   color: #ffffff;
 }
 
@@ -149,7 +155,7 @@ button:hover {
 }
 
 @media (min-width: 700px) {
-  button {
+  .button {
     padding: 0.8em 1.8em;
     border: 2px solid #000000;
     position: relative;
@@ -164,7 +170,7 @@ button:hover {
     color: #000000;
   }
   
-  button::before {
+  .button::before {
     content: '';
     width: 0;
     height: 300%;
@@ -193,9 +199,6 @@ button:hover {
     height: 57px;
   }
 
-  .office-address{
-    display: flex;
-  }
 
   .social{
     position: fixed; /* La caja estará fija respecto a la ventana */
