@@ -113,7 +113,7 @@ main {
 }
 
 .loader {
-  gap: 5px;
+  gap: 8px;
   color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -188,11 +188,13 @@ main {
     padding: 13px;
     width: 83%;
     max-width: 29%;
+    min-width: 339px;
   }
 
   .loader {
     font-weight: 500;
     font-size: 50px;
+    gap: 15px;
   }
 
   .words {
