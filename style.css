@@ -79,7 +79,7 @@ main {
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   gap:40px;
   text-align: center;
