@@ -4,20 +4,76 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ProximaNovaS";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/ProximaNovaS-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+body{
+  font-family: ProximaNova;
+}
+
 header {
   width: 100%;
+  background-color: #000000;
+}
+
+.text_container{
+  color: white;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.text_container h1{
+  font-weight: 200;
+}
+
+.text_container h1 span{
+  font-weight: 600;
 }
 
 .icons_and_button{
   display: flex;
-  gap: 20vh;
+  gap:20px;
   flex-direction: column;
 }
 
+
 main {
   display: flex;
+  padding: 30px;
   flex-direction: column;
-  background-image: url('./assets/images/background.png');
+  background-image: url('./assets/images/background.webp');
   background-size: cover;
   /* Ajusta la imagen para cubrir todo el contenedor */
   /* Centra la imagen */
@@ -25,6 +81,7 @@ main {
   /* Evita que la imagen se repita */
   height: 100vh;
   width: 100vw;
+  gap:40px;
   text-align: center;
   box-sizing: border-box;
   align-items: center;
@@ -39,7 +96,8 @@ main {
 }
 
 .social img{
-  width: 60px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
@@ -54,13 +112,11 @@ main {
   align-items: start;
   width: 100%;
   height: 100%;
-  margin-bottom: 50px;
 }
 
 .button {
-  margin-top: 50px;
   padding: 0.8em 1.8em;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
   position: relative;
   overflow: hidden;
   background-color: transparent;
@@ -70,7 +126,7 @@ main {
   transition: .3s;
   z-index: 1;
   font-family: inherit;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -82,7 +138,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #000000;
+  background: #ffffff;
   transition: .5s ease;
   display: block;
   z-index: -1;
@@ -93,71 +149,21 @@ main {
 }
 
 .button:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 
 .img_logo {
-  padding: 50px;
+  padding: 15px;
   width: 100%;
   box-sizing: border-box;
 }
 
-
-.card {
-  background-color: var(--bg-color);
-  border-radius: 1.25rem;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.loader {
-  gap: 8px;
-  color: rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 25px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-}
-
-.words {
-  overflow: hidden;
-  position: relative;
-  text-align: end;
-  min-width: 97px;
-  height: 29px;
-}
-
-.words::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(var(--bg-color) 10%,
-      transparent 30%,
-      transparent 70%,
-      var(--bg-color) 90%);
-  z-index: 20;
-}
-
-.word {
-  display: block;
-  height: 100%;
-  color: #3074f1;
-  animation: spin_4991 10s infinite;
-}
 
 @media (min-width: 700px) {
   .button {
     padding: 0.8em 1.8em;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -167,7 +173,7 @@ main {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #000000;
+    color: #ffffff;
   }
   
   .button::before {
@@ -178,7 +184,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #000000;
+    background: #ffffff;
     transition: .5s ease;
     display: block;
     z-index: -1;
