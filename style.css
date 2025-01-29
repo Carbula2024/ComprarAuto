@@ -39,33 +39,35 @@
   src: url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
 }
 
-body{
+body {
   font-family: ProximaNova;
   height: 100vh;
 }
 
 header {
+  max-height: 15%;
   width: 100%;
+  display: flex;
   background-color: #000000;
 }
 
-.text_container{
+.text_container {
   color: white;
   width: 100%;
   font-size: 0.8rem;
 }
 
-.text_container h1{
+.text_container h1 {
   font-weight: 200;
 }
 
-.text_container h1 span{
+.text_container h1 span {
   font-weight: 600;
 }
 
-.icons_and_button{
+.icons_and_button {
   display: flex;
-  gap:20px;
+  gap: 20px;
   flex-direction: column;
 }
 
@@ -80,9 +82,9 @@ main {
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
-  height: 100%;
   width: 100vw;
-  gap:40px;
+  height: 100%;
+  gap: 70px;
   text-align: center;
   box-sizing: border-box;
   align-items: center;
@@ -96,13 +98,13 @@ main {
   gap: 50px;
 }
 
-.social img{
-  width: 30px;
-  height: 30px;
+.social img {
+  width: 40px;
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
-.social img:hover{
+.social img:hover {
   transform: scale(1.2);
 }
 
@@ -176,7 +178,7 @@ main {
     font-family: inherit;
     color: #ffffff;
   }
-  
+
   .button::before {
     content: '';
     width: 0;
@@ -191,32 +193,21 @@ main {
     z-index: -1;
   }
 
-  .img_logo {
-    padding: 13px;
-    width: 83%;
-    max-width: 29%;
-    min-width: 339px;
-  }
 
-  .loader {
-    font-weight: 500;
-    font-size: 50px;
+/*
+  .social {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
     gap: 15px;
-  }
+    padding: 10px;
+    z-index: 1000;
+  }*/
 
-  .words {
-    height: 57px;
-  }
-
-
-  .social{
-    position: fixed; /* La caja estará fija respecto a la ventana */
-    bottom: 20px;    /* A 20px del borde inferior */
-    right: 20px;     /* A 20px del borde derecho */
-    display: flex;   /* Mantén el diseño flex para los íconos */
-    gap: 15px;       /* Ajusta el espacio entre los íconos */
-    padding: 10px;   /* Espaciado interno */
-    z-index: 1000;   /* Asegúrate de que esté sobre otros elementos */
+  .social a img{
+    width: 40px;
+    height: 40px;
   }
 
 }
