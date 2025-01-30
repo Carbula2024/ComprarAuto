@@ -162,8 +162,16 @@ main {
   box-sizing: border-box;
 }
 
+.go-to-carbuila{
+  display: none;
+}
+
 
 @media (min-width: 700px) {
+  main{
+    gap:35px;
+  }
+
   .button {
     padding: 0.8em 1.8em;
     border: 2px solid #ffffff;
@@ -191,6 +199,23 @@ main {
     transition: .5s ease;
     display: block;
     z-index: -1;
+  }
+
+  .go-to-carbuila{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    padding: 20px;
+    font-size: 1.47em;
+    color: white;
+  }
+
+  .title-go-to-carbula{
+    font-size: 1.5em;
+  }
+
+  .go-to-carbuila a{
+    color: white;
   }
 
 
